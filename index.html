@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="header-title">Palindrome Checker</h1>
+    </header>
+    <main id="main">
+      <section id="instructions">
+        <div>
+          <p>
+            A Palindrome is a word or phrase which is the same spelled forwards
+            or backwards.
+          </p>
+        </div>
+        <div>
+          <p>
+            Enter a word or phrase below below to see if it is a palindrome.
+            Only alpha-numeric characters will be considered as part of the word
+            or phrase.
+          </p>
+        </div>
+      </section>
+      <section id="checker">
+        <input id="input" type="text" placeholder="Enter text here" />
+        <button class="btn" id="check-btn">Check</button>
+        <button class="btn" id="clear-btn">Clear</button>
+      </section>
+      <div id="result">
+        <p>Results will appear here</p>
+      </div>
+      <section id="results-graph" class="hidden">
+        <div class="results-graph-div">
+          <p id="is-pal-list-title" style="text-decoration: underline">
+            Palindromes
+          </p>
+          <ul id="is-palindrome-list"></ul>
+        </div>
+        <div class="results-graph-div">
+          <p id="not-pal-list-title" style="text-decoration: underline">
+            Not Palindromes
+          </p>
+          <ul id="not-palindrome-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
